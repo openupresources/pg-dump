@@ -37,7 +37,7 @@ Run [pg\_dump](https://www.postgresql.org/docs/9.6/app-pgdump.html) to generate 
         uses: tj-actions/pg-dump@v3
         with:
           database_url: "postgres://test_user:test_user_password@localhost:5432/testdb"
-          postgresql_version: "16"  # Note: Only the major version is required e.g. 12, 14, 15, 16
+          postgresql_version: "16"  # Note: Only the major version is required e.g. 12, 14, 15, 16, 18
           path: "backups/backup.sql" 
           options: "-O"   
 ```
